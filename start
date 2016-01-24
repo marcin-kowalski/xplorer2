@@ -1,0 +1,6 @@
+rm /tmp/cmd
+mkfifo /tmp/cmd
+node omxplayer.js&
+sleep 1
+curl http://localhost:3000/list
+
